@@ -7,8 +7,6 @@ Facebook (Meta).
 What are components in React?
 Reusable pieces of UI that can be either class-based or functional.
 
-                                                                      Stopped Here
-
 What is JSX?
 A syntax extension for JavaScript that allows mixing HTML with JS.
 
@@ -26,6 +24,8 @@ Simple JavaScript functions that return JSX.
 
 What are class components?
 Components defined as ES6 classes extending React.Component.
+
+Stopped Here 👍👍👍
 
 Can you use state in functional components?
 Yes, using the useState hook.
