@@ -25,8 +25,6 @@ Simple JavaScript functions that return JSX.
 What are class components?
 Components defined as ES6 classes extending React.Component.
 
-Stopped Here 👍👍👍
-
 Can you use state in functional components?
 Yes, using the useState hook.
 
@@ -44,6 +42,8 @@ Using props for parent-to-child, and callback functions for child-to-parent.
 
 What is the virtual DOM?
 An in-memory representation of the real DOM for efficient updating.
+
+Stopped Here 👍👍👍
 
 How does React update the UI?
 By comparing the virtual DOM with the previous one and updating only the changed parts.
