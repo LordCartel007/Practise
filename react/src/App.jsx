@@ -25,7 +25,7 @@
 
 import React, { useState } from "react";
 
-function typing() {
+function Typing() {
   const [text, setText] = useState("");
 
   const handleChange = (e) => {
@@ -35,19 +35,13 @@ function typing() {
 
   return (
     <>
-      <div>
-        <h1>
-          type anything
-          <input
-            type="text"
-            value={text}
-            onChange={handleChange}
-            placeholder="type"
-          ></input>
-        </h1>
-      </div>
+      <div>Type here</div>
+      <input
+        placeholder="type here"
+        value={text}
+        onChange={handleChange}
+      ></input>
     </>
   );
 }
-
-export default typing;
+export default Typing;
