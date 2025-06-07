@@ -40,3 +40,9 @@ for (let i = 1; i <= 100; i++) {
 for (let i = 10; i <= 10; i++) {
   console.log(i);
 }
+
+const adding = (Num1, Num2) => {
+  return Num1 * Num2;
+};
+
+console.log(adding(4, 4) + " adding");
