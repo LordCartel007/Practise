@@ -46,3 +46,10 @@ const adding = (Num1, Num2) => {
 };
 
 console.log(adding(4, 4) + " adding");
+
+const multiply = (num, percent) => {
+  var One = (num * percent) / 100;
+  return One;
+};
+
+console.log(multiply(12000, 10));
