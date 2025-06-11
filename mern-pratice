@@ -1,0 +1,85 @@
+🟨 GENERAL JAVASCRIPT (Core Skill for MERN)
+Variables, scoping (let, const, var)
+
+ES6+ syntax (arrow functions, destructuring, spread/rest)
+
+Promises, async/await
+
+Array methods: map, filter, reduce, forEach, find
+
+Error handling (try/catch)
+
+JSON manipulation
+
+🟦 NODE.JS + EXPRESS (Backend)
+Setting up a basic Express server
+
+Creating routes (GET, POST, PUT, DELETE)
+
+Using middleware (express.json(), cors, custom middleware)
+
+Handling request/response (req.body, req.params, req.query)
+
+Connecting to MongoDB with Mongoose
+
+REST API design patterns (CRUD)
+
+Route organization (separate files, controllers)
+
+Basic auth with JWT (optional, advanced)
+
+🟩 MONGODB + MONGOOSE
+Schema definition with Mongoose
+
+Model methods: .find(), .findById(), .save(), .updateOne(), .deleteOne()
+
+Working with \_id fields
+
+Connecting to MongoDB (local or cloud)
+
+Relationships (refs and population) – less common in short challenges
+
+Validation and default values
+
+🟦 REACT (Frontend)
+Only if it's a full-stack challenge — otherwise, it might not come up.
+
+State management (useState, useEffect)
+
+Fetching data from backend (with fetch or axios)
+
+Controlled forms
+
+Displaying lists and conditional rendering
+
+React Router (basic navigation)
+
+Submitting forms to Express backend
+
+🛡️ BONUS AREAS (If They Go Deeper)
+JWT Authentication (login, register, verify token)
+
+Protecting routes (middleware in Express)
+
+CORS and security headers
+
+Deployment awareness (e.g., how to deploy MERN stack app)
+
+Environment variables (dotenv)
+
+✅ Must-Know Scenarios for a 20-Minute Challenge
+Focus on being able to:
+
+Build a simple Express API (CRUD for tasks, users, notes, etc.)
+
+Connect to MongoDB and perform basic queries
+
+Handle JSON data from the frontend
+
+Structure a small React app that interacts with your backend (if frontend is tested)
+
+Also learn the git methods for forking and making changes without pushing and wait for the app manager to accept git commit
+
+Learn all javascript function and how to use it code
+
+learn the install of all packages
