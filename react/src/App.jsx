@@ -75,12 +75,33 @@
 
 import React, { useState, useEffect } from "react";
 
+// function userList() {
+// const [users, setUsers] = useState([]);
+// const [error, setError] = useState("");
+
+// useEffect(() => {
+//   const fetchUser = async () => {
+//     try {
+//       const response = await fetch(
+//         "https://jsonplaceholder.typicode.com/users"
+//       );
+//       if (!response.ok) throw new Error("failed to fetch");
+//       const data = await response.json();
+//       setUsers(data);
+//     } catch (err) {
+//       setError(err.message);
+//     }
+//   };
+
+//   fetchUser();
+// }, []);
+
 function userList() {
   const [users, setUsers] = useState([]);
   const [error, setError] = useState("");
 
   useEffect(() => {
-    const fetchUser = async () => {
+    const fetchUsers = async () => {
       try {
         const response = await fetch(
           "https://jsonplaceholder.typicode.com/users"
@@ -92,14 +113,14 @@ function userList() {
         setError(err.message);
       }
     };
-
-    fetchUser();
+    fetchUsers();
   }, []);
+
   return (
     <>
       <div>
         <h2>Users:</h2>
-        {error && <p style={{ color: "red" }}>{error}</p>}
+        {error && <p style={{ color: "red " }}>{error}</p>}
         <ul>
           {users.map((user) => (
             <li key={user.id}>{user.name}</li>
@@ -111,3 +132,13 @@ function userList() {
 }
 
 export default userList;
+{
+  /* <ul>
+          {users.map((user) => (
+            <li key={user.id}>{user.name}</li>
+          ))}
+        </ul> */
+}
+{
+  /* {error && <p style={{ color: "red" }}>{error}</p>} */
+}
