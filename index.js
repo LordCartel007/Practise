@@ -79,6 +79,7 @@ function removeDuplicates(arr) {
   return [...new Set(arr)];
 }
 
+//STOPPED HERE
 // 5. Count Occurrences of Each Word
 
 function wordCount(str) {
@@ -233,3 +234,7 @@ const verifyToken = (req, res, next) => {
 app.get("/dashboard", verifyToken, (req, res) => {
   res.json({ message: "Welcome to the dashboard" });
 });
+
+function reverseTwo(word) {
+  return word.split("").reverse().join("");
+}
