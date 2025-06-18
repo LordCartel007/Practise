@@ -74,7 +74,14 @@
 // export default add;
 
 import React, { useState, useEffect } from "react";
-
+import GridFourBox from "./components/Grid";
+import CountryDropdown from "./components/Dropdown";
+import NameListBox from "./components/Showbox";
+import SearchFilter from "./components/Searchfilter";
+import ImageUploader from "./components/Imageupload";
+import MultiImageUploader from "./components/Multiplepicupload";
+import ReduxCounter from "./components/Reduxcounter";
+import { useTheme } from "./components/ThemeContext";
 // function userList() {
 // const [users, setUsers] = useState([]);
 // const [error, setError] = useState("");
@@ -99,6 +106,17 @@ import React, { useState, useEffect } from "react";
 function userList() {
   const [users, setUsers] = useState([]);
   const [error, setError] = useState("");
+  const { theme, toggleTheme } = useTheme();
+
+  const styles = {
+    backgroundColor: theme === "light" ? "#fff" : "#333",
+    color: theme === "light" ? "#00e5ff" : "#111",
+    minHeight: "100vh",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    flexDirection: "column",
+  };
 
   useEffect(() => {
     const fetchUsers = async () => {
@@ -119,13 +137,27 @@ function userList() {
   return (
     <>
       <div>
-        <h2>Users:</h2>
+        <h2 className="text-3xl font-bold underline text-red-900">Users:</h2>
         {error && <p style={{ color: "red " }}>{error}</p>}
         <ul>
           {users.map((user) => (
             <li key={user.id}>{user.name}</li>
           ))}
         </ul>
+      </div>
+      <div style={styles}>
+        <h1>{theme.toUpperCase()} MODE</h1>
+        <button onClick={toggleTheme}>
+          Switch to {theme === "light" ? "Dark" : "Light"} Mode
+        </button>
+
+        <GridFourBox />
+        <CountryDropdown />
+        <NameListBox />
+        <SearchFilter />
+        <ImageUploader />
+        <MultiImageUploader />
+        <ReduxCounter />
       </div>
     </>
   );
